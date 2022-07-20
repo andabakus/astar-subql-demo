@@ -20,7 +20,7 @@ network:
   dictionary: 'https://api.subquery.network/sq/subquery/astar-dictionary'
 dataSources:
   - kind: substrate/Runtime
-    startBlock: 1000000
+    startBlock: 1470000
     mapping:
       file: ./dist/index.js
       handlers:
@@ -29,3 +29,8 @@ dataSources:
           filter:
             module: dappsStaking
             method: NewDappStakingEra
+        - handler: handleRewardEvent
+          kind: substrate/EventHandler
+          filter:
+            module: dappsStaking
+            method: Reward         

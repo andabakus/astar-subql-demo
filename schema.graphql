@@ -6,3 +6,17 @@ type Tvl @entity {
 
   tvl: BigInt!
 }
+
+type Reward @entity {
+
+  id: ID! #eraIndex + accountID
+
+  eraIndex: Int! #EraIndex
+
+  smartContract: String!
+
+  balanceOf: BigInt!
+
+  accountId: String!
+
+}
