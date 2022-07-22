@@ -1,0 +1,241 @@
+{
+  query {
+    rewards(
+      last: 10,
+    ) {
+      nodes {
+        id
+        accountId
+        smartContract
+        balanceOf
+      }
+    }
+  }
+}
+
+
+
+{
+  query {
+    rewards(
+      last: 10 orderBy: BALANCE_OF_DESC,
+      filter: {
+        accountId: {in: "aFZSyZy5xw8rbhryMQVNWL8eqgkZ1An7AjGDExE26kFACA9"}
+        
+      }
+    ) {
+      nodes {
+        id
+        accountId
+        smartContract
+        balanceOf
+      }
+    }
+  }
+}
+
+
+{
+  query {
+    tvls (last:10) {
+    nodes {
+      id
+      tvl
+    }
+  }
+}
+}
+
+
+
+
+
+{
+  query {
+    rewards(
+      last: 50
+      orderBy: BALANCE_OF_DESC
+      filter: {
+        accountId: {
+          in: [
+            "ZwDkW3D3Z417kFDSh6ez9xhUWpTn1c1DAKZHUQCZXZeMqFN"
+            "ZfEuzYHyfo5TZfAx9fsntdkx2W4gDFLPwUNeqSrJTpQJXDc"
+            "W3RJVe6n1i3sFhbitDYHBJqq5aQt1F3vi2384tSdccuZxEp"
+            "YkZxbbmyCQDvpu9sMrHMqx86sijfbVcRbQ5vtkdh1xKgTjV"
+            "XhjGfuq5T1KoEFp2k5TEDaKBe6o2nFdo8JRXL3UYb1vZySW"
+            "ZqpPKt2sk2Xwd1YgYq8UvPF3JJDJ7XcEKFCcybYTeYDaigC"
+            "Wg8vPjUhTQx4JM88qsBKG6u2rXJbYCF7LxUxJvqtVvYnPzj"
+            "ZPPSjcJwBkCjhUG3Yd9kaii8R7QTw8ykjiztQHfokeoYMjN"
+            "bdwHz6t2fJ2ALk63N2ECUVTyghbFFq8dFTss5pytFxApFaR"
+            "YJqWvgMJcD1Di3BQvZ2W2KnSGKPfJGMVX6BZ9wfEaipviK9"
+            "b449sv9HhoTkrBor6Y6GPgv77mfqANCfXAi716sDN7BWm6t"
+            "XhdK6WfN4CzaeuPNT8v6s6YT1KgY2ftowEzr9KX9jTNjBsi"
+            "WGYLrLw8TPjp1ynU9AiwZtanc7B2CMtB43ssKmawDwfoUsZ"
+            "ZP8rbjrkyf5Qkjr32fEy3n6av2nPzHh6Egv62Vu8kgEwZ8Z"
+            "Wwfs24NNBLsdN9BHHj29spDsq5vkjk771dxPvMrXwraLywn"
+            "a4iJiYqsy3LK5KezfiDidVrGgUs5HVdffp7a6roBhVV7cuq"
+            "b9AB1qFXsw81RuTBQ1sCP6PQ6k27QXWoe7VHrv9m6iwmBRK"
+            "WdwRSePZTEa61BJNqu3cmoMiTE4ukp3xHKnNvP1mtugKL52"
+          ]
+        }
+      }
+    ) {
+      nodes {
+        id
+        accountId
+        smartContract
+        balanceOf
+      }
+    }
+  }
+}
+
+
+dApps
+dappsStaking.registeredDevelopers: Option<AstarRuntimeSmartContract>
+[
+  [
+    [
+      ZwDkW3D3Z417kFDSh6ez9xhUWpTn1c1DAKZHUQCZXZeMqFN
+    ]
+    {
+      Evm: 0x992bad137fc8a50a486b5c6375f581964b4a15fc
+    }
+  ]
+  [
+    [
+      ZfEuzYHyfo5TZfAx9fsntdkx2W4gDFLPwUNeqSrJTpQJXDc
+    ]
+    {
+      Evm: 0x101b453a02f961b4e3f0526ecd4c533c3a80d795 // Astar Commmunity rewards
+    }
+  ]
+  [
+    [
+      W3RJVe6n1i3sFhbitDYHBJqq5aQt1F3vi2384tSdccuZxEp
+    ]
+    {
+      Evm: 0x8b5d62f396ca3c6cf19803234685e693733f9779
+    }
+  ]
+  [
+    [
+      YkZxbbmyCQDvpu9sMrHMqx86sijfbVcRbQ5vtkdh1xKgTjV
+    ]
+    {
+      Evm: 0xcdb32eed99aa19d39e5d6ec45ba74dc4afec549f
+    }
+  ]
+  [
+    [
+      XhjGfuq5T1KoEFp2k5TEDaKBe6o2nFdo8JRXL3UYb1vZySW
+    ]
+    {
+      Evm: 0x48f292e9fdce07ba34217b0aa62e08b62376df3e
+    }
+  ]
+  [
+    [
+      ZqpPKt2sk2Xwd1YgYq8UvPF3JJDJ7XcEKFCcybYTeYDaigC
+    ]
+    {
+      Evm: 0xa5efb5bf75bbb607dc243707a83f2af5ed4e9813
+    }
+  ]
+  [
+    [
+      Wg8vPjUhTQx4JM88qsBKG6u2rXJbYCF7LxUxJvqtVvYnPzj
+    ]
+    {
+      Evm: 0x9448610696659de8f72e1831d392214ae1ca4838
+    }
+  ]
+  [
+    [
+      ZPPSjcJwBkCjhUG3Yd9kaii8R7QTw8ykjiztQHfokeoYMjN
+    ]
+    {
+      Evm: 0xaab44542c72f88f7b98fffda418e3efe94bc13af
+    }
+  ]
+  [
+    [
+      bdwHz6t2fJ2ALk63N2ECUVTyghbFFq8dFTss5pytFxApFaR
+    ]
+    {
+      Evm: 0xe915d2393a08a00c5a463053edd31bae2199b9e7
+    }
+  ]
+  [
+    [
+      YJqWvgMJcD1Di3BQvZ2W2KnSGKPfJGMVX6BZ9wfEaipviK9
+    ]
+    {
+      Evm: 0x95f506e72777efcb3c54878bb4160b00cd11cd84
+    }
+  ]
+  [
+    [
+      b449sv9HhoTkrBor6Y6GPgv77mfqANCfXAi716sDN7BWm6t
+    ]
+    {
+      Evm: 0xa0e232d596d6838d39ddde9b63916b42246be15e
+    }
+  ]
+  [
+    [
+      XhdK6WfN4CzaeuPNT8v6s6YT1KgY2ftowEzr9KX9jTNjBsi
+    ]
+    {
+      Evm: 0x1de7c3a07918fb4be9159703e73d6e0b0736cabc
+    }
+  ]
+  [
+    [
+      WGYLrLw8TPjp1ynU9AiwZtanc7B2CMtB43ssKmawDwfoUsZ
+    ]
+    {
+      Evm: 0x8489f4554790f5a103f2b0398537eaee68b73884
+    }
+  ]
+  [
+    [
+      ZP8rbjrkyf5Qkjr32fEy3n6av2nPzHh6Egv62Vu8kgEwZ8Z
+    ]
+    {
+      Evm: 0x733ebcc6df85f8266349defd0980f8ced9b45f35
+    }
+  ]
+  [
+    [
+      Wwfs24NNBLsdN9BHHj29spDsq5vkjk771dxPvMrXwraLywn
+    ]
+    {
+      Evm: 0xabf7230e022c9146df9b4dbed97e73cf61d612b8
+    }
+  ]
+  [
+    [
+      a4iJiYqsy3LK5KezfiDidVrGgUs5HVdffp7a6roBhVV7cuq
+    ]
+    {
+      Evm: 0xd59fc6bfd9732ab19b03664a45dc29b8421bda9a
+    }
+  ]
+  [
+    [
+      b9AB1qFXsw81RuTBQ1sCP6PQ6k27QXWoe7VHrv9m6iwmBRK
+    ]
+    {
+      Evm: 0xc4335b1b76fa6d52877b3046eca68f6e708a27dd
+    }
+  ]
+  [
+    [
+      WdwRSePZTEa61BJNqu3cmoMiTE4ukp3xHKnNvP1mtugKL52
+    ]
+    {
+      Evm: 0xa602d021da61ec4cc44dedbd4e3090a05c97a435
+    }
+  ]
+]

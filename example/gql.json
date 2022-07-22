@@ -1,0 +1,14 @@
+{"query" : "{
+    query {
+      rewards(last: 15) {
+        nodes {
+          id
+          accountId
+          smartContract
+          balanceOf
+        }
+      }
+}
+}"
+}
+  

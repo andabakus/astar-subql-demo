@@ -1,0 +1,25 @@
+{"query" : "{
+    query {
+      rewards(
+      filter : {
+        accountId : {
+            in: [
+                \"aFZSyZy5xw8rbhryMQVNWL8eqgkZ1An7AjGDExE26kFACA9\"
+            ]
+        }
+      }
+      ) {
+        nodes {
+          id
+          accountId
+          smartContract
+          balanceOf
+        }
+      }
+}
+}"
+}
+  
+
+
+  
